@@ -1,4 +1,4 @@
-package com.mycompany.teatromoroS6;
+package com.mycompany.teatromoros6;
 
 import java.util.Scanner;
 
@@ -643,6 +643,7 @@ public class TeatroMoroS6 {
     }
 
     // Imprimir boleta
+// Imprimir boleta
     private void imprimirBoleta(Scanner scanner) {
         int indiceVenta = -1;
         while (true) {
@@ -666,7 +667,7 @@ public class TeatroMoroS6 {
         }
 
         System.out.println("\n=== BOLETA TEATRO MORO ===");
-        
+
         System.out.println("Boleta encontrada, código: " + codigosVentas[indiceVenta]); // DEBUG - BOLETA 2: Código de boleta encontrado
         System.out.println("Código: " + codigosVentas[indiceVenta]);
         System.out.println("Número de venta: " + (indiceVenta + 1));
@@ -677,8 +678,5 @@ public class TeatroMoroS6 {
         System.out.println("Precio total: " + preciosVentas[indiceVenta]); // DEBUG - BOLETA 3: Precio total de la boleta
         System.out.printf("Precio total: $%.0f CLP\n", preciosVentas[indiceVenta]);
         System.out.println("=============================");
-
-        mostrarMapaAsientos(ubicacionesVentas[indiceVenta]);
-        System.out.println("Asiento: " + asientosVentas[indiceVenta]);
     }
 }
